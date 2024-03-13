@@ -33,7 +33,7 @@ const Home = () => {
   };
 
   const backgroundStyle = {
-    backgroundImage: "url('/path/to/your/image.jpg')", // Replace with your image path
+    backgroundImage: `url(${process.env.PUBLIC_URL}/bg.jpg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     minHeight: "100vh",
@@ -43,10 +43,12 @@ const Home = () => {
     justifyContent: "center",
     color: "white",
   };
+  
+  
 
   return (
     <div style={backgroundStyle}>
-      <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>Please visit all pages </h1>
+      <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>Explore ❤</h1>
 
       <div style={buttonContainerStyle}>
         <Link to="/landingpage">
